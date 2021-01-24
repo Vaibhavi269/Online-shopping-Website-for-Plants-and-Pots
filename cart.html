@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
+    <script>
+      
+    </script>
+</head>
+<body>
+  <header class="page_header">
+    <div class="main">
+        <div class="logo">
+            <img src="./media/logo.png" alt="Image not Found">
+        </div>
+        <div class="nav-centered">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="shop.html">Shop</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        </div>
+        <div class="nav-right">
+        <ul>
+            <li class="cart"><a href="cart.html"><img src="./media/cart.png"></a><span>(0)</span></li>
+            <li class="login_btn"><a href="index.html">Logout</a></li>
+        </ul>
+        </div>
+
+</header>
+    <div class="plants_container">
+      <div class="plant_header">
+          <h5 class="plant_title">PLANT</h5>
+          <h5 class="plant_price">PRICE</h5>
+          <h5 class="quantity">QUANTITY</h5>
+          <h5 class="total">TOTAL</h5>
+      </div>
+      <div class="plants">
+
+      </div>
+      <input type="submit" value="Checkout" class="order" id="btn_chechout" onclick="location.href='checkout.html'" >
+        
+    </div>
+    
+    <script src="./js/shop1.js"></script>
+</body>
+</html>

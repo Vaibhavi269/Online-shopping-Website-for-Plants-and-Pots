@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
+    <style>
+        body{
+            background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(./media/background.jpg);
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="register">
+        <h2>Register</h2>
+        <form onSubmit = "return checkPassword(this)">
+                <input type="text" name="uName" placeholder="User Name">  
+				<p>Username must be and contain 5 - 12 characters</p>
+                <input type="text" name="email" placeholder="Email ID">
+				<p>Email must be a valid address, e.g. me@mydomain.com</p>
+                <input type="password" name="password" placeholder="Enter Password">
+				<p>Password must alphanumeric (@, _ and - are also allowed) and be 5 - 20 characters</p>
+                <input type="password" name="cpassword" placeholder="Enter confirm Password">
+				<p>Password must be same as given above</p>
+                <input type="checkbox" name="terms&condition" class="checkbox"><span >I agree to the Terms & Condition</span>
+                <input type="submit" name="register" value="Register" formaction="login.html">                
+       </form>
+    </div> 
+	<script src="./js/validation.js"></script>	
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
+    <style>
+        body{
+            background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(./media/background.jpg);
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="login">
+        <h2>Login</h2>
+        <form onSubmit = "return checkValidation(this)">
+                <input type="text" name="uName" placeholder="Enter Username">
+				<p>Username must be and contain 5 - 12 characters</p>
+                <input type="password" name="password" placeholder="Enter Password">
+				<p>Password must alphanumeric (@, _ and - are also allowed) and be 5 - 20 characters</p>
+                <input type="submit" name="login" value="Login" formaction="home.html">
+                <a href="#"> Forget Password?</a>
+                <input type="button" class="signup" name="Signup" value="Create an account" onclick="location.href='register.html'">
+       </form>
+    </div>   
+	<script src="./js/validation.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width , initial-scale=1.0">
+        <title>Contact Us</title>
+        <link rel="stylesheet" type="text/css" href="./css/styles.css">
+        <style>
+            body{
+                background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(./media/background.jpg);
+                height: 100vh;
+                background-size: cover;
+                background-position: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h2>Contact Us</h2>  
+				<form onSubmit = "return msgSend_btn(this)">
+                <div class="fname">
+                        <input type="text" name="fName" placeholder="First Name" id="fname" >
+                        <p style="float: left; margin-left: -340px; margin-top: 70px;">
+                            Firstname must be and contain 3 - 10 characters</p>
+                        
+                </div>
+                <div class="lname">
+                        <input type="text" name="lName" placeholder="Last Name" id="lname">
+                        <p style="float: right; margin-right: 40px; margin-top: -10px;">
+                            Lastname must be and contain 4 - 10 characters</p>
+                </div>
+                <div>                            
+                    <input type="email" name="email" placeholder="Email">
+                    <p>Email must be a valid address, e.g. me@mydomain.com</p>
+                </div>
+                <div>    
+                    <textarea name="msg" id="msg" pattern="[a-z]{1,30}(,[a-z]{1,30})*" rows="4" placeholder="Message"></textarea>
+                    <p>Message must be  and  contain 10 - 100 characters</p>
+                </div>
+                <div class="submit">
+                        <input type="submit" value="Send">
+                </div>  
+				</form>
+        </div>
+        <script src="./js/validation.js"></script>
+    </body>
+</html>
